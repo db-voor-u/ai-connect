@@ -7,7 +7,7 @@ const route = useRoute();
 const navigation = [
   { name: 'Begin', href: '/', current: route === 'index' },
   { name: 'Blog', href: '/blog', current: route.name.includes('blog') },
-  { name: 'Project', href: '/project', current: route.name == 'project' },
+  { name: 'Projecten', href: '/project', current: route.name == 'project' },
   { name: 'Contact', href: '/contact', current: route.name == 'contact' },
 ]
 </script>
@@ -41,7 +41,7 @@ const navigation = [
   
       <DisclosurePanel class="sm:hidden">
         <div class="space-y-1 px-2 pb-3 pt-2">
-          <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-purple-600  text-white' : ' text-neutral-600 hover:bg-purple-600  hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
+          <DisclosureButton v-for="item in navigation" :key="item.name" as="nav" :href="item.href" :class="[item.current ? 'bg-purple-600  text-white' : ' text-neutral-600 hover:bg-purple-600  hover:text-white', 'block rounded-md px-3 py-2 text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
         </div>
       </DisclosurePanel>
     </Disclosure>
