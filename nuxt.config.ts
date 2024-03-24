@@ -7,6 +7,18 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/tailwindcss','nuxt-icon'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon', 
+    '@nuxt/content'
+  ],
+  content: {
+
+    highlight: {
+    theme: 'nord',
+    preload: ['ts', 'tsx','bash','shell','sh','yaml','yml','json','md','markdown','html','css','scss','sass','less','styl','stylus','vue','js','jsx','ts','tsx','php','py','rb','java','c','cpp','cs','swift','kt'],
+ 
+  }
+  },
 
 })

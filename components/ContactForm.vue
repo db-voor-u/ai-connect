@@ -6,8 +6,8 @@
 	<div class="container mx-auto my-4 px-4 lg:px-20">
 
 		<div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-			<div class="flex">
-				<h1 class="font-bold uppercase text-3xl text-neutral-600">Stuur ons een bericht</h1>
+			<div class="flex flex-row">
+			 <img src="~/assets/images/wereld.png" class="rotate mr-2 mb-10 h-14 w-14 rounded-full bg-blue-200 justify-center items-center" >	<h1 class=" font-bold uppercase text-1xl text-neutral-600 mt-3">feedback of vragen</h1>
 			</div>
 			<div class="flex flex-col gap-5  mt-5">
 				<input class="w-full bg-gray-100  text-neutral-600 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -53,10 +53,10 @@
             </div>
            
           </div>
-          
-          <div class="flex my-4 w-2/3 lg:w-1/2 gap-4">
-            <a href="https://github.com/db-voor-u/portfolio" target="_blank" rel="noreferrer" class="mx-1 ">
-              <Icon name="uil:github" class="h-8 w-8 mx-auto  " />
+    
+          <div class="flex my-4 w-2/3 lg:w-1/2 gap-4 ">
+            <a href="https://github.com/db-voor-u/ai-connect" target="_blank" rel="noreferrer" class="mx-1 ">
+              <Icon name="uil:github" class="h-8 w-8 mx-auto " />
             </a>
             <a href="#" target="_blank" rel="noreferrer" class="mx-1 ">
               <Icon name="uil:linkedin" class="h-8 w-8 mx-auto" />
@@ -78,3 +78,20 @@
 
 
 </template>
+
+
+<style>
+.rotate {
+  animation: rotate 15s linear infinite;
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+</style>
